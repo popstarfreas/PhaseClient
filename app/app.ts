@@ -1,9 +1,6 @@
-process.env.NODE_PATH = __dirname;
-require('module').Module._initPaths();
-
 import * as $ from 'jquery';
 import {} from 'bootstrap';
-import Client from 'client';
+import Client from 'phase/client';
 
 $(() => {
     // Init tooltips
@@ -13,6 +10,7 @@ $(() => {
 
     let client = new Client({
         protocol: 'https',
+        host: 't.dark-gaming.com',
         port: 3001
     });
 });

@@ -2,8 +2,6 @@
   "compilerOptions": {
     "module": "commonjs",
     "sourceMap": true,
-    "baseUrl": "./app",
-    "rootDir": "./app",
     "strictNullChecks": true
   },
   "files": [
