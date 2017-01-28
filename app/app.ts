@@ -10,7 +10,7 @@ $(() => {
 
     let client = new Client({
         protocol: 'https',
-        host: 't.dark-gaming.com',
-        port: 3001
+        host: 't.dark-gaming.com:3001',
+        secure: true
     });
 });
