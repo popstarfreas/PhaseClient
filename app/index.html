@@ -6,12 +6,12 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/jpg" href="https://t.dark-gaming.com:3001/img/128.png" />
-	    <link rel="stylesheet" href="https://t.dark-gaming.com:3001/stylesheets/bootstrap.min.css">
+	    <link rel="stylesheet" href="stylesheets/bootstrap.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="https://t.dark-gaming.com:3001/stylesheets/style.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
     </head>
     <body>
     <div id="phase-avatar-form">
@@ -50,10 +50,9 @@
                             </div>
                             <div class="collapse navbar-collapse" id="top-bar" >
                                 <ul class="nav navbar-nav">
-                                    <p class="navbar-text">Logged in as <span class="dynamic-current-user">{{ name }}</span></p>
+                                    <p class="navbar-text">Logged in as <span class="dynamic-current-user"><b>Loading...</b></span></p>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
-                                    {{#links}}<li><a href="{{ href }}" target="_blank">{{ name }}</a></li>{{/links}}
                                     <li class="dropdown">
                                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><!-- <span class="dynamic-current-user"></span> --><!-- <span class="caret"></span> --></a>
                                         <ul class="dropdown-menu">
@@ -90,7 +89,7 @@
                                 <div class="people-section-name">Users in Discussion (<span id="people-section-discussion-count">1/0</span>) <span class="glyphicon glyphicon-chevron-down"></span></div>
                                 <div class="people-section-list">
                                     <ul>
-                                        <li>{{ name }}<i class="fa fa-circle" data-toggle="tooltip" data-placement="left" title="Online"></i></li>
+                                        <li class="dynamic-current-user"><b>Loading...</b><i class="fa fa-circle" data-toggle="tooltip" data-placement="left" title="Online"></i></li>
                                     </ul>
                                 </div>
                             </div>
@@ -160,7 +159,6 @@
     <!-- /container -->    
     <!-- Forms -->
     </div>
-
         <script src="/bundle.js" />
     </body>
 </html>
