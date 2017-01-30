@@ -1,5 +1,4 @@
 import * as $ from 'jquery';
-import {} from 'bootstrap';
 import Client from 'phase/client';
 
 $(() => {
