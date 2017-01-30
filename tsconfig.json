@@ -4,7 +4,8 @@
     "sourceMap": true,
     "strictNullChecks": true
   },
-  "files": [
-    "app/app.ts"
+  "include": [
+      "app/**/*",
+      "node_modules/phase/**/*"
   ]
 }
