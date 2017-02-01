@@ -1,5 +1,5 @@
 import * as $ from 'jquery';
-import Client from 'phase/client';
+import Client from 'phasemobile/client';
 
 $(() => {
     // Init tooltips

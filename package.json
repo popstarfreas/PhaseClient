@@ -4,7 +4,8 @@
   "description": "The web edition of the Phase Client",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080",
+    "start": "webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0",
+    "build": "webpack --config webpack.config.js --progress --profile --bail",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

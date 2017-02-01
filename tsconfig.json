@@ -6,6 +6,7 @@
   },
   "include": [
       "app/**/*",
-      "node_modules/phase/**/*"
+      "node_modules/phase/**/*",
+      "node_modules/phasemobile/**/*"
   ]
 }
