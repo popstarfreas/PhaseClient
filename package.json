@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/diff": "0.0.31",
     "bootstrap": "^3.3.7",
     "diff": "^3.2.0",
     "html-webpack-plugin": "^2.24.1",
