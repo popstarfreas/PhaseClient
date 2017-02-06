@@ -2,6 +2,10 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+#phase {
+    display: none;
+}
+
 /* Loading */
 .spinner-container {    
   position: absolute;
@@ -249,10 +253,10 @@ a:focus {
 
 #phase-content #content-discussions,
 #phase-content #content-people {
-    position: relative;
     overflow: auto;
     height: 100%;
     padding-bottom: 15px;
+    position: absolute;
 }
 
 #phase-content #content-chat {
@@ -265,11 +269,15 @@ a:focus {
 #phase-content #content-discussions {
     overflow: hidden;
     padding-bottom: 40px;
+    left: 0;
+    display: none;
 }
 
 #phase-content #content-people {
     overflow: hidden;
     padding-bottom: 40px;
+    right: 0;
+    display: none;
 }
 
 #phase-content #content-discussions,
@@ -412,13 +420,11 @@ a:focus {
 
 #chat-title {
     position: fixed;
-    width: 100%;
-    margin-right: 255px;
+    width: 101%;
 }
 
 #chat-title > div {
     padding-left: 20px;
-    margin-right: 500px;
     padding-top: 1px;
     padding-bottom: 5px;
     margin-top: -1px;
@@ -1143,7 +1149,7 @@ a:focus {
 #chat-input {
     position: fixed;
     /*margin-right: 249px;*/
-    padding-right: 496px;
+    /*padding-right: 496px;*/
     width: 100%;
     bottom: 0;
 }
@@ -1173,10 +1179,90 @@ a:focus {
 
 /* YOUTUBE ON-DEMAND LOADING */
 
-.youtube-container { display: block; width: 640px; height: 360px; }
-.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; height: 100%; cursor: hand; cursor: pointer; display: block; }
+.youtube-container { display: block; width: 100% }
+.youtube-player { display: block; width: 100%; /* assuming that the video has a 16:9 ratio */ padding-bottom: 56.25%; overflow: hidden; position: relative; width: 100%; cursor: hand; cursor: pointer; display: block; }
 img.youtube-thumb { bottom: 0; display: block; left: 0; margin: auto; max-width: 100%; width: 100%; position: absolute; right: 0; top: 0; height: auto }
 div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; margin-top: -36px; position: absolute; background: url("//i.imgur.com/TxzC70f.png") no-repeat; }
 #youtube-iframe { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 
 /* END OF YOUTUBE ON-DEMAND LOADING */
+
+
+/* LOGIN SECTION */
+body {
+    background-color: #fafafa;
+}
+
+#login_main {
+    height: 200px;
+    padding: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #555;
+}
+
+.loading {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(100,10,229,0.9);
+    border-top: 5px solid rgba(100,10,229,0.4);
+    border-left: 5px solid rgba(100,10,229,0.4);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 175px;
+    top: 150px;
+    margin: 0 auto;
+    z-index: 10;
+    animation: spin .5s infinite linear;
+    display: none;
+}
+
+#login_appname h1 {
+    color: #a600e8;
+    font-family: 'Francois One',sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#login_main #login_container {
+    font-size: 18px;
+}
+
+#login_main #login_information {
+    padding-left: 20px;
+}
+
+#login_main #login_form {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#login_main #login_form>div {
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+#login_main input, #login_main select {
+    width: 100%;
+    border-radius: 3px;
+    padding: 5px 5px;
+    font-size: 15px;
+    border: 1px solid #eee;
+}
+
+#login_main #submit {
+    float: right;
+    width: 100px;
+    height: 35px;
+    background-color: #a600e8;
+    color: #fff;
+    margin-top: 5px;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+/* END OF LOGIN SECTION */

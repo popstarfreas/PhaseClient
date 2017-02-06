@@ -1,6 +1,6 @@
 import * as $ from 'jquery';
-import Client from 'phasemobile/client';
-import PageModel from 'phasemobile/pagemodel';
+import Client from 'phase/client';
+import PageModel from 'phase/pagemodel';
 import Network from 'phase/network';
 
 $(() => {
