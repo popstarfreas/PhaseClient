@@ -17,5 +17,6 @@ $(() => {
     });
     let pageModel = new PageModel(client);
 
-    client.setup(network, pageModel);
+    client.setupNetwork(network);
+    client.setupPageModel(pageModel);
 });
