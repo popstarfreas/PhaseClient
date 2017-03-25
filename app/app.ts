@@ -1,16 +1,22 @@
 import * as $ from 'jquery';
-import {} from 'bootstrap';
-import Client from 'phase/client';
+import Client from 'phaseweb/client';
+import PageModel from 'phaseweb/pagemodel';
+import Network from 'phase/network';
 
 $(() => {
-    // Init tooltips
-    $(function() {
-        $('[data-toggle="tooltip"]').tooltip();
+    let client = new Client({
+        combineMessages: true,
+        shrinkJoinLeaveMessages: true,
+        useAndDisplayJoinLeaveMessages: false
     });
 
-    let client = new Client({
+    let network = new Network(client, {
         protocol: 'https',
-        host: 't.dark-gaming.com',
-        port: 3001
+        host: 't.dark-gaming.com:3001',
+        secure: true
     });
+    let pageModel = new PageModel(client);
+
+    client.setupNetwork(network);
+    client.setupPageModel(pageModel);
 });

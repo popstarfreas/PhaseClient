@@ -2,9 +2,10 @@
   "compilerOptions": {
     "module": "commonjs",
     "sourceMap": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+	  "outDir": "build"
   },
-  "files": [
-    "app/app.ts"
+  "include": [
+      "app/**/*"
   ]
 }
