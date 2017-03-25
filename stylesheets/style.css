@@ -734,7 +734,6 @@ a:focus {
 #chat-content #chat-list-inprogress li {
     display: block;
     padding: 4px 10px 4px 15px;
-    vertical-align: middle;
     clear: both;
 }
 
@@ -1277,6 +1276,26 @@ body {
 
 .inactive {
 	opacity: .5;
+}
+
+@keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(360deg);
+    };
+}
+
+@keyframes spinoff {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+
+    100% {
+        -moz-transform: rotate(-360deg);
+    };
 }
 
 @-moz-keyframes spin {
