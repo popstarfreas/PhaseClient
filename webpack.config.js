@@ -3,6 +3,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {  
   entry: './app/app.ts',
   output: {
+    path: __dirname + "/dist/web",
     filename: 'bundle.js'
   },
   devtool: 'source-map',
