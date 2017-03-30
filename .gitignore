@@ -1,5 +1,4 @@
 /node_modules/*
 build/
-bundle.*
+dist/
 *.js
-/index.html
