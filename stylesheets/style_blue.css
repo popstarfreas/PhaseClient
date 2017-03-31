@@ -1,6 +1,6 @@
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #2e3136;
+    background: -webkit-linear-gradient(-90deg, #22294f, #373764);
 }
 
 ::-webkit-scrollbar {
@@ -10,7 +10,7 @@ body {
 
 
 ::-webkit-scrollbar-thumb {
-    background: #282B2E;
+    background: #21264b;
     border-radius: 10px;
     width: 10px;
 }
@@ -95,9 +95,9 @@ a:focus {
 }
 
 .navbar-default {
-    background-color: #2e3136;
+    background-color: #232244;
     border: none;
-    border-bottom: 2px solid #282b30;
+    border-bottom: 2px solid #1C1B40;
 }
 
 .navbar .navbar-header .navbar-brand {
@@ -245,7 +245,7 @@ a:focus {
 }
 
 #phase-content > div {
-    background: #36393e;
+    background: transparent;
 }
 
 #phase-content #content-people {
@@ -260,8 +260,8 @@ a:focus {
     padding-top: 1px;
     padding-left: 15px;
     height: 40px;
-    background: #2e3136;
-    border-bottom: 2px solid #282b30;
+    background-color: #232244;
+    border-bottom: 2px solid #1C1B40;
 }
 
 #phase-content #content-people #people-title h4 {
@@ -304,13 +304,13 @@ a:focus {
 #phase-content #content-discussions {
     width: 250px;
     float: left;
-    background: #2e3136;
-    border-right: 1px solid #282b30;;
+    background: -webkit-linear-gradient(-90deg, #1d2346, #373764);
+    border-right: 1px solid #1C1B40;
 }
 
 #phase-content #content-discussions #discussion-title {
-    background: #2e3136;
-    border-bottom: 2px solid #282b30;
+    background: #232244;
+    border-bottom: 2px solid #1C1B40;
     padding-left: 12px;
     padding-top: 1px;
     margin-top: -1px;
@@ -339,6 +339,7 @@ a:focus {
     height: 100%;
     overflow: auto;
     margin-right: -20px;
+    padding-right: 20px;
 }
 
 #phase-content #content-discussions #discussion-list .discussion {
@@ -347,10 +348,9 @@ a:focus {
     height: 70px;
     padding: 10px 0 0 13px;
     color: #999;
-    border-bottom: 1px solid #282b30;
+    border-bottom: 1px solid #21264b;
     position: relative;
     border-left: 2px solid transparent;
-    padding-right: 20px;
 }
 
 #phase-content #content-discussions #discussion-list .discussion:hover {
@@ -390,8 +390,8 @@ a:focus {
 }
 
 #phase-content #content-discussions #discussion-list > .selected {
-  background-color: #282b30;
-  border-left: 2px solid #7289da;
+  background-color: #292e56;
+  border-left: 2px solid #177fff;
 }
 
 #add-discussion-panel {
@@ -434,8 +434,8 @@ a:focus {
     padding-top: 1px;
     padding-bottom: 5px;
     margin-top: -1px;
-    background-color: #2e3136;
-    border-bottom: 2px solid #282b30;
+    background-color: #232244;
+    border-bottom: 2px solid #1C1B40;
     height: 40px;
     position: relative;
 }
@@ -608,15 +608,14 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section-name {
-    min-height: 41px;
     height: 41px;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-name {
     padding: 10px 5px 10px 15px;
     font-size: 14px;
-    background: #33373D;
-    border-bottom: 1px solid #282b30;
+    background-color: #21264b;
+    border-bottom: 1px solid #1C1B40;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-name:hover {
@@ -652,7 +651,7 @@ a:focus {
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li {
     padding: 2px 5px 2px 10px;
-    height: 30px;
+    height: 25px;
     white-space: nowrap;
     clear: both;
 }
@@ -663,9 +662,9 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_avatar img {
-    width: 30px;
-    height: 30px;
-    border-radius: 24px;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people-username {
@@ -675,7 +674,7 @@ a:focus {
     width: 130px;
     font-weight: bold;
     margin-left: 8px;
-    margin-top: 5px;
+    margin-top: 2px;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .mod {
@@ -711,7 +710,7 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .fa-circle {
-    color: #3ba919;
+    color: #12DE00;
     font-size: 12px;
     float: right;
     position: relative;
@@ -745,7 +744,7 @@ a:focus {
 #chat-content #chat-list > li,
 #chat-content #chat-list-inprogress li {
     display: block;
-    padding: 8px 10px 8px 15px;
+    padding: 4px 10px 4px 15px;
     clear: both;
 }
 
@@ -759,7 +758,7 @@ a:focus {
 #chat-content #chat-list-inprogress li .chat-message-avatar img {
     width: 35px;
     height: 36px;
-    border-radius: 26px;
+    border-radius: 3px;
     margin-right: 7px;
 }
 
@@ -789,14 +788,13 @@ a:focus {
 
 #chat-content #chat-list > li .chat-message-right,
 #chat-content #chat-list-inprogress li .chat-message-right {
-    margin-left: 47px;
+    margin-left: 42px;
 }
 
 #chat-content #chat-list> li .chat-message-right > .chat-message-content,
 #chat-content #chat-list-inprogress > li .chat-message-right > .chat-message-content {
     word-wrap: break-word;
     white-space: pre-line;
-    font-size: 14.4px;
 }
 
 #chat-content #chat-list > li .chat-message-right .chat-message-ip {
@@ -817,7 +815,7 @@ a:focus {
 #chat-content #chat-list-inprogress li .chat-name {
     font-size: 15px;
     font-weight: bold;
-    color: #639EB8;
+    color: #DE4B5F;
 }
 
 #chat-content #chat-list > li .chat-name .guestName {
@@ -1171,13 +1169,12 @@ a:focus {
 
 #chat-input > div {
     padding: 5px 15px;
-    background: #36393e;
 }
 
 #chat-input .input-group .form-control {
     border-radius: 3px 0 0 3px;
-    background-color: #2e3136;
-    border: 1px solid #282b30;
+    background-color: #21264b;
+    border: 1px solid #1C1B40;
     color: #aaa;
 }
 
@@ -1185,8 +1182,8 @@ a:focus {
     /* SEND BUTTON */
     margin-left: -1px;
     border-radius: 0px 3px 3px 0;
-    background: #2e3136;
-    border: 1px solid #282b30;
+    background-color: #21264b;
+    border: 1px solid #1C1B40;
     color: #999;
 }
 
@@ -1194,8 +1191,8 @@ a:focus {
     /* CHECKBOX */
     border-left: 0px;
     border-radius: 0;
-    background: #2e3136;
-    border: 1px solid #282b30;
+    background-color: #21264b;
+    border: 1px solid #1C1B40;
 }
 
 
@@ -1220,7 +1217,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
     left: 0;
     right: 0;
     margin: auto;
-    color: #999;
+    color: #555;
 }
 
 #login_appname h1 {
@@ -1254,8 +1251,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
     border-radius: 3px;
     padding: 5px 5px;
     font-size: 15px;
-    border: 1px solid #3D3D45;
-    background: #54545C;
+    border: 1px solid #eee;
 }
 
 #login_main #submit {
@@ -1267,7 +1263,6 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
     margin-top: 5px;
     border-radius: 4px;
     font-size: 15px;
-    border: 2px solid #7500A3;
 }
 
 #login_main input#submit:hover {
