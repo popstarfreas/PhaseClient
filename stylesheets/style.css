@@ -832,6 +832,16 @@ a:focus {
     color: #639EB8;
 }
 
+#chat-content #chat-list > li .chat-name-creator,
+#chat-content #chat-list-inprogress > li .chat-name-creator {
+    color: #DE4B5F;
+}
+
+#chat-content #chat-list > li .chat-name-moderator,
+#chat-content #chat-list-inprogress > li .chat-name-moderator {
+    color: #DE7C4B;
+}
+
 #chat-content #chat-list > li .chat-name .guestName {
     color: #888;
 }
