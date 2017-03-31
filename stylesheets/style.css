@@ -341,6 +341,13 @@ a:focus {
     margin-right: -20px;
 }
 
+
+@-moz-document url-prefix() {
+    #phase-content #content-discussions #discussion-list {
+        overflow: initial;
+    }
+}
+
 #phase-content #content-discussions #discussion-list .discussion {
     width: 100%;
     border-bottom: 1px solid #dedede;
@@ -651,8 +658,8 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li {
-    padding: 2px 5px 2px 10px;
-    height: 30px;
+    padding: 4px 5px 0px 10px;
+    height: 36px;
     white-space: nowrap;
     clear: both;
 }
