@@ -813,6 +813,11 @@ a:focus {
     display: block;
 }
 
+#chat-content #chat-list li .chat-message-info .systemSuffix,
+#chat-content #chat-list-inprogress li .chat-message-info .systemSuffix {
+    color: #6381B8;
+}
+
 #chat-content #chat-list > li .chat-name,
 #chat-content #chat-list-inprogress li .chat-name {
     font-size: 15px;
