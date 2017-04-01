@@ -685,6 +685,14 @@ a:focus {
     margin-top: 5px;
 }
 
+#phase-content #content-people #people-list .people-section .people-section-list ul li .people-username-creator {
+    color: #DE4B5F;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .people-username-moderator {
+    color: #DE7C4B;
+}
+
 #phase-content #content-people #people-list .people-section .people-section-list ul li .mod {
     color: #FFBB00;
     width: 14px;
@@ -842,8 +850,9 @@ a:focus {
     color: #DE7C4B;
 }
 
-#chat-content #chat-list > li .chat-name .guestName {
-    color: #888;
+#chat-content #chat-list > li .chat-name-guest,
+#chat-content #chat-list-inprogress > li .chat-name-guest {
+    color: #8E8E8E;
 }
 
 #chat-content #chat-list > li .chat-timestamp {
