@@ -383,7 +383,38 @@ a:focus {
 }
 
 #phase-content #content-discussions #discussion-list .unread {
-  border-left: 2px solid #FFC400;
+    border-left: 2px solid #FFC400; 
+}
+
+@-webkit-keyframes unread-inprogress {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@-moz-keyframes unread-inprogress {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@keyframes unread-inprogress { 
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+
+#phase-content #content-discussions #discussion-list .unread-inprogress:after {
+     content:'';
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    bottom: 0px;
+    background: linear-gradient(180deg, transparent, transparent, #ff00b1, transparent, transparent);
+    background-size: 100% 300%;
+    width: 2px;
+
+    -webkit-animation: unread-inprogress 2s ease infinite;
+    -moz-animation: unread-inprogress 2s ease infinite;
+    animation: unread-inprogress 2s ease infinite;
 }
 
 #phase-content #content-discussions #discussion-list .discussion .discussion-preview {
