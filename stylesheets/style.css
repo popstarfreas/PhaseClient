@@ -850,6 +850,11 @@ a:focus {
     color: #DE7C4B;
 }
 
+#chat-content #chat-list > li .chat-name-asterisk,
+#chat-content #chat-list-inprogress > li .chat-name-asterisk {
+    color: #b400ff;
+}
+
 #chat-content #chat-list > li .chat-name-guest,
 #chat-content #chat-list-inprogress > li .chat-name-guest {
     color: #8E8E8E;
