@@ -3,6 +3,14 @@ body {
     background-color: #2e3136;
 }
 
+a {
+    color: #3698d2;
+}
+
+a:hover {
+    color: #3698d2;
+}
+
 ::-webkit-scrollbar {
   background: transparent;
   width: 10px;
@@ -799,6 +807,7 @@ a:focus {
 #chat-content #chat-list-inprogress > li .chat-message-avatar {
     float: left;
     padding-top: 2px;
+    position: relative;
 }
 
 #chat-content #chat-list > li .chat-message-avatar img,
@@ -891,16 +900,24 @@ a:focus {
     color: #8E8E8E;
 }
 
-#chat-content #chat-list > li .chat-terraria-online {
-    color: #1AC600;
-    margin-left: 5px;
+#chat-content #chat-list > li .chat-terraria-status {
+    position: absolute;
+    right: 3px;
+    bottom: -2px;
+    border: 2px solid #36393e;
+    border-radius: 7px;
     font-size: 13px;
+    width: 15px;
+    height: 15px;
+}
+
+
+#chat-content #chat-list > li .chat-terraria-online {
+    background: #1AC600;
 }
 
 #chat-content #chat-list > li .chat-terraria-offline {
-    color: #616167;
-    margin-left: 5px;
-    font-size: 13px;
+    background: #616167;
 }
 
 #chat-content #chat-list > li .chat-timestamp {
