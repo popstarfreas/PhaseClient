@@ -891,6 +891,18 @@ a:focus {
     color: #8E8E8E;
 }
 
+#chat-content #chat-list > li .chat-terraria-online {
+    color: #1AC600;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
+#chat-content #chat-list > li .chat-terraria-offline {
+    color: #616167;
+    margin-left: 5px;
+    font-size: 13px;
+}
+
 #chat-content #chat-list > li .chat-timestamp {
     margin-bottom: -10px;
     color: #555;
