@@ -1,7 +1,7 @@
 import * as $ from 'jquery';
 import Client from 'phasemobile/client';
 import PageModel from 'phasemobile/pagemodel';
-import Network from 'phase/network';
+import Network from 'phaseclient/network';
 
 $(() => {
     let client = new Client({
