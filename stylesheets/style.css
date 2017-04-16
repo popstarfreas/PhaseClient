@@ -911,6 +911,9 @@ a:focus {
     height: 15px;
 }
 
+#chat-content #chat-list > li:hover .chat-terraria-status {
+    border-color: #282b30;
+}
 
 #chat-content #chat-list > li .chat-terraria-online {
     background: #1AC600;
