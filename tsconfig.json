@@ -6,6 +6,7 @@
 	  "outDir": "build"
   },
   "include": [
-      "app/**/*"
+      "app/**/*",
+      "node_modules/phasecore/**/*"
   ]
 }
