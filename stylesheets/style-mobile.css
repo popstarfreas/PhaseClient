@@ -3,6 +3,14 @@ body {
     background-color: #2e3136;
 }
 
+a {
+    color: #3698d2;
+}
+
+a:hover {
+    color: #3698d2;
+}
+
 #phase {
     display: none;
     color: #aaa;
@@ -387,6 +395,37 @@ a:focus {
     border-left: 2px solid #FFC400;
 }
 
+@-webkit-keyframes unread-inprogress {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@-moz-keyframes unread-inprogress {
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+@keyframes unread-inprogress { 
+    0%{background-position:54% 0%}
+    50%{background-position:47% 100%}
+    100%{background-position:54% 0%}
+}
+
+#phase-content #content-discussions #discussion-list .unread-inprogress:after {
+     content:'';
+    position: absolute;
+    left: -2px;
+    top: 0px;
+    bottom: 0px;
+    background: linear-gradient(180deg, transparent, transparent, #ff00b1, transparent, transparent);
+    background-size: 100% 300%;
+    width: 2px;
+
+    -webkit-animation: unread-inprogress 2s ease infinite;
+    -moz-animation: unread-inprogress 2s ease infinite;
+    animation: unread-inprogress 2s ease infinite;
+}
+
 #phase-content #content-discussions #discussion-list .discussion .discussion-preview {
     text-overflow: ellipsis;
     overflow: hidden;
@@ -768,6 +807,7 @@ a:focus {
 #chat-content #chat-list-inprogress > li .chat-message-avatar {
     float: left;
     padding-top: 2px;
+    position: relative;
 }
 
 #chat-content #chat-list > li .chat-message-avatar img,
@@ -852,9 +892,37 @@ a:focus {
     color: #DE7C4B;
 }
 
+#chat-content #chat-list > li .chat-name-asterisk,
+#chat-content #chat-list-inprogress > li .chat-name-asterisk {
+    color: #b400ff;
+}
+
 #chat-content #chat-list > li .chat-name-guest,
 #chat-content #chat-list-inprogress > li .chat-name-guest {
     color: #8E8E8E;
+}
+
+#chat-content #chat-list > li .chat-terraria-status {
+    position: absolute;
+    right: 3px;
+    bottom: -2px;
+    border: 2px solid #36393e;
+    border-radius: 7px;
+    font-size: 13px;
+    width: 15px;
+    height: 15px;
+}
+
+#chat-content #chat-list > li:hover .chat-terraria-status {
+    border-color: #282b30;
+}
+
+#chat-content #chat-list > li .chat-terraria-online {
+    background: #1AC600;
+}
+
+#chat-content #chat-list > li .chat-terraria-offline {
+    background: #616167;
 }
 
 #chat-content #chat-list > li .chat-timestamp {
