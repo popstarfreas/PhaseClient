@@ -4,7 +4,7 @@ module.exports = {
   entry: './app/mobileapp.ts',
   output: {
     path: __dirname + "/dist/mobile",
-    filename: 'bundle.js'
+    filename: 'bundle.[hash].js'
   },
   devtool: 'source-map',
   resolve: {
