@@ -71,7 +71,7 @@
                                     <span class="icon-bar"></span>
                                 </button>
                                 <a href="http://t.dark-gaming.com:3000/" class="navbar-brand">Phase</a>
-                                <div style="position:absolute; right: 60px; top: 14px">Alpha v0.15</div>
+                                <div style="position:absolute; right: 60px; top: 14px">Alpha v0.17</div>
                             </div>
                             <div class="collapse navbar-collapse" id="top-bar" >
                                 <ul class="nav navbar-nav">
@@ -145,6 +145,7 @@
                         </div>
                     </div>
                     <div id="content-chat">
+                        <div class="loading"></div>
                         <div id="chat-title" class="row">
                             <div><h4 id="dynamic-chat-title">Welcome!</h4><i id="alert-bell" class="alert-bell-inactive fa fa-bell" data-placement="right" data-toggle="tooltip" title="Enable Alerts for this discussion" data-container="body"></i><i id="message-search" class="fa fa-search" data-placement="right" data-container="body" data-toggle="tooltip" title="Search for messages in this discussion"></i><form id="input-search-form"><input id="input-search" type="text" placeholder="Search..." /></form></div>
                         </div>
@@ -161,17 +162,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="chat-input" class="row">
-                            <div class="col-sm-12">
-                                <div class="input-group">
-                                    <input type="text" id="chat-text" class="form-control" placeholder="Start typing text..." data-toggle="tooltip" data-placement="top" title="">
-                                    <span class="input-group-addon" data-toggle="tooltip" data-placement="left" title="When checked, messages will not be automatically sent on ENTER">
-                                        <input type="checkbox" value="1" aria-label="...">
-                                    </span>
-                                    <span class="input-group-btn">
-                                        <button id="chat-send" class="btn btn-default" type="button" data-toggle="tooltip" data-placement="left" title="Click to send the message">Send</button>
-                                    </span>
-                                </div>
+                        <div id="chat-input">
+                            <div id="chat-input-avatar">
+                                <img class="avatar_11179" src="https://t.dark-gaming.com:3001/avatars/1_userPhoto-1480099747593.png" onerror="this.onerror=null;this.src='https://t.dark-gaming.com:3001/img/question-mark.jpg';">
+                            </div>
+                            <div id="chat-input-right">
+                                <span class="chat-name" title="">Rofle</span>
+                                <textarea type="text" id="chat-text" class="" placeholder="Start typing text..." data-toggle="tooltip" data-placement="top" title=""></textarea>
                             </div>
                         </div>
                     </div>
