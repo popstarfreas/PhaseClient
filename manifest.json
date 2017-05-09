@@ -1,0 +1,14 @@
+{
+  "short_name": "Phase",
+  "name": "Phase Mobile",
+  "icons": [
+    {
+      "src": "https://t.dark-gaming.com/mphase/phaseicon.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    }
+  ],
+  "start_url": "https://t.dark-gaming.com/mphase",
+  "background_color": "#36393e",
+  "display": "standalone"
+}
