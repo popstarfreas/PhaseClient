@@ -462,6 +462,10 @@ a:focus {
 
 #phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-right .chat-message-content {
     font-size: 13px;
+    overflow: hidden;
+    width: 185px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 #phase-content #content-discussions #discussion-list > .selected {
