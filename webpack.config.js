@@ -1,5 +1,7 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
 module.exports = {  
   entry: './app/app.ts',
   output: {
@@ -7,9 +9,6 @@ module.exports = {
     filename: 'bundle.[hash].js'
   },
   devtool: 'source-map',
-  resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
-  },
   plugins: [
       new webpack.optimize.UglifyJsPlugin(),
 
@@ -21,5 +20,12 @@ module.exports = {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader' }
     ]
+  },
+  resolve: {
+    modules: [
+      "node_modules",
+      "app/node_modules"
+    ],
+    extensions: [".ts", ".js", ".json"]
   }
 }

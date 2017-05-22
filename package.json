@@ -13,18 +13,23 @@
   "dependencies": {
     "@types/diff": "0.0.31",
     "bootstrap": "^3.3.7",
+    "cld": "^2.4.7",
     "diff": "^3.2.0",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
     "jquery.hotkeys": "^0.1.0",
+    "langdetect": "^0.2.1",
+    "languagedetect": "^1.1.1",
     "moment": "^2.17.1",
     "simple-peer": "^7.0.0",
     "socketcluster-client": "^5.1.1",
     "ts-loader": "^1.3.3",
+    "ts-promise": "^0.3.4",
     "typescript": "^2.3.2",
-    "webpack": "^1.14.0"
+    "webpack": "^2.5.1"
   },
   "devDependencies": {
+    "@types/jquery": "^2.0.45",
     "webpack-dev-server": "^1.16.2"
   }
 }
