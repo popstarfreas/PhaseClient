@@ -141,6 +141,27 @@ a:focus {
 
 /* END OF TOP BAR  */
 
+#context-menu {
+    z-index: 1001;
+    width: 100px;
+    color: #999;
+    border-left: 3px solid #222;
+    background-color: #2a2c2f;
+    border-radius: 5px;
+    list-style: none;
+    position: absolute;
+}
+
+#context-menu li {
+    padding: 5px;
+}
+
+#context-menu li:hover {
+    background-color: #222222;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #phase-avatar-form {
     z-index: 1001;
     position: absolute;
@@ -596,6 +617,7 @@ a:focus {
     z-index: 0;
     margin-top: 40px;
     overflow: auto;
+    position: relative;
 }
 
 @-moz-document url-prefix() {
