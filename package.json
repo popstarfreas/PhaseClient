@@ -13,13 +13,11 @@
   "dependencies": {
     "@types/diff": "0.0.31",
     "bootstrap": "^3.3.7",
-    "cld": "^2.4.7",
     "diff": "^3.2.0",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
     "jquery.hotkeys": "^0.1.0",
     "langdetect": "^0.2.1",
-    "languagedetect": "^1.1.1",
     "moment": "^2.17.1",
     "simple-peer": "^7.0.0",
     "socketcluster-client": "^5.1.1",
