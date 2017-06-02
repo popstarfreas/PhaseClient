@@ -7,7 +7,8 @@ $(() => {
     const client = new Client({
         combineMessages: true,
         shrinkJoinLeaveMessages: true,
-        useAndDisplayJoinLeaveMessages: false
+        useAndDisplayJoinLeaveMessages: false,
+        displayOtherSystemsNames: true
     });
 
     const network = new Network(client, {
