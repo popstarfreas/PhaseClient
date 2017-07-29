@@ -873,6 +873,7 @@ a:focus {
     height: 36px;
     border-radius: 26px;
     margin-right: 7px;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 #content-chat #chat-list > li img {
