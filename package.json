@@ -1,6 +1,6 @@
 {
   "name": "phaseweb",
-  "version": "0.23.2",
+  "version": "0.23.3",
   "description": "The web edition of the Phase Client",
   "main": "index.js",
   "scripts": {
@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/diff": "0.0.31",
     "bootstrap": "^3.3.7",
+    "combokeys": "^2.4.6",
     "diff": "^3.2.0",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
@@ -27,6 +28,7 @@
     "webpack": "^2.5.1"
   },
   "devDependencies": {
+    "@types/combokeys": "^2.4.5",
     "@types/jquery": "^2.0.45",
     "webpack-dev-server": "^1.16.2"
   }
