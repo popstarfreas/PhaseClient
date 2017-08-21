@@ -115,6 +115,10 @@ a:focus {
     font-family: 'Francois One', sans-serif;
 }
 
+.navbar .navbar-header div {
+    margin-right: 10px;
+}
+
 /* TOP BAR  */
 
 #phase-navigation > nav {
@@ -361,7 +365,7 @@ a:focus {
 #phase-content #content-discussions #discussion-list .discussion {
     width: 100%;
     border-bottom: 1px solid #dedede;
-    height: 70px;
+    height: 84px;
     padding: 10px 0 0 13px;
     color: #999;
     border-bottom: 1px solid #282b30;
@@ -435,6 +439,25 @@ a:focus {
     padding-left: 5px;
     font-size: 14px;
     clear: both;
+    display: flex;
+    padding-top: 3px;   
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-avatar {
+    padding-top: 3px;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-avatar img {
+    width: 28px;
+    height: 29px;
+    border-radius: 26px;
+    margin-right: 7px;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-right .chat-message-info .chat-name {
+    font-size: 13px;
+    font-weight: bold;
+    color: #639EB8;
 }
 
 #phase-content #content-discussions #discussion-list > .selected {
@@ -462,7 +485,7 @@ a:focus {
 
 #phase-content #content-chat {
     padding-right: 15px;
-    padding-left: 10px;
+    padding-left: 14px;
     display: flex;
     flex-direction: column;
 }
@@ -486,6 +509,7 @@ a:focus {
     background-color: #2e3136;
     border-bottom: 2px solid #282b30;
     height: 40px;
+    width: 100%;
 }
 
 #chat-title > div > h4 {
@@ -815,7 +839,7 @@ a:focus {
 
 #chat-content #chat-list > li .chat-message-avatar img,
 #chat-content #chat-list-inprogress li .chat-message-avatar img {
-    width: 35px;
+    width: 36px;
     height: 36px;
     border-radius: 26px;
     margin-right: 7px;
@@ -838,11 +862,6 @@ a:focus {
 #content-chat #chat-list .terrariaItem {
     max-height: 20px;
     padding: 0 2px 0 2px;
-}
-
-#chat-content #chat-list > li:hover,
-#chat-content #chat-list-inprogress li:hover {
-    background-color: #282b30;
 }
 
 #chat-content #chat-list > li .chat-message-right,
