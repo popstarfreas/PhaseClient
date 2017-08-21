@@ -7,9 +7,6 @@ module.exports = {
     filename: 'bundle.[hash].js'
   },
   devtool: 'source-map',
-  resolve: {
-    extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
-  },
   plugins: [
       new webpack.optimize.UglifyJsPlugin(),
 
@@ -21,5 +18,12 @@ module.exports = {
     loaders: [
       { test: /\.ts$/, loader: 'ts-loader' }
     ]
+  },
+  resolve: {
+    modules: [
+      "node_modules",
+      "app/node_modules"
+    ],
+    extensions: [".ts", ".js", ".json"]
   }
 }
