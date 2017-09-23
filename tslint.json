@@ -29,6 +29,7 @@
             15
         ],
         "eofline": true,
+        "no-eval": false,
         "one-variable-per-declaration": [true],
         "ordered-imports": [true],
         "quotemark": [
