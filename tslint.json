@@ -26,9 +26,10 @@
         "use-isnan": true,
         "cyclomatic-complexity": [
             true,
-            20
+            15
         ],
         "eofline": true,
+        "no-eval": false,
         "one-variable-per-declaration": [true],
         "ordered-imports": [true],
         "quotemark": [

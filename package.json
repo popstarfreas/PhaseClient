@@ -1,11 +1,12 @@
 {
   "name": "phaseweb",
-  "version": "0.23.2",
+  "version": "0.31.2",
   "description": "The web edition of the Phase Client",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0",
     "startmini": "webpack-dev-server --config webpack.mini.config.js --inline --progress --port 8080 --host 0.0.0.0",
+    "startm": "webpack-dev-server --config webpack.mobile.config.js -inline --progress --port 8081 --host 0.0.0.0",
     "build": "webpack --config webpack.config.js --progress --profile --bail && webpack --config webpack.mobile.config.js --progress --profile --bail",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +15,7 @@
   "dependencies": {
     "@types/diff": "0.0.31",
     "bootstrap": "^3.3.7",
+    "combokeys": "^2.4.6",
     "diff": "^3.2.0",
     "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.1.1",
@@ -28,6 +30,7 @@
     "webpack": "^2.5.1"
   },
   "devDependencies": {
+    "@types/combokeys": "^2.4.5",
     "@types/jquery": "^2.0.45",
     "webpack-dev-server": "^1.16.2"
   }

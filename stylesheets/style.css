@@ -11,6 +11,10 @@ a:hover {
     color: #3698d2;
 }
 
+audio::-webkit-media-controls-panel {
+    background: #1f2227;
+}
+
 ::-webkit-scrollbar {
   background: transparent;
   width: 10px;
@@ -471,7 +475,7 @@ a:focus {
 }
 
 #phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-right .chat-message-info .chat-name {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: bold;
     color: #639EB8;
 }
@@ -873,6 +877,7 @@ a:focus {
     height: 36px;
     border-radius: 26px;
     margin-right: 7px;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 #content-chat #chat-list > li img {
@@ -912,6 +917,11 @@ a:focus {
     line-height: normal;
 }
 
+#chat-content #chat-list > li .chat-message-right > .chat-message-content > .alert-name {
+    color: #ffca00;
+    font-weight: bold;
+}
+
 #chat-content #chat-list > li .chat-message-right > .chat-message-content > .chat-line {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -934,6 +944,12 @@ a:focus {
 #chat-content #chat-list li .chat-message-info .systemSuffix,
 #chat-content #chat-list-inprogress li .chat-message-info .systemSuffix {
     color: #6381B8;
+}
+
+#chat-content #chat-list li .chat-message-info .chat-alert {
+    color: #ffca00;
+    margin-left: 7px;
+    font-size: 14px;
 }
 
 #chat-content #chat-list > li .chat-name,
