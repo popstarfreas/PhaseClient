@@ -8,7 +8,8 @@ $(() => {
         combineMessages: true,
         shrinkJoinLeaveMessages: true,
         useAndDisplayJoinLeaveMessages: false,
-        displayOtherSystemsNames: false
+        displayOtherSystemsNames: false,
+        mergeLiveTypingWithCompleteChatArea: false
     });
 
     const network = new Network(client, {
