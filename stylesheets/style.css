@@ -544,10 +544,12 @@ a:focus {
 }
 
 #chat-title > div > h4 > input {
-    padding-top: 3px;
     padding-left: 2px;
     position: relative;
     right: 2px;
+    bottom: 1px;
+    background: transparent;
+    border: none;
 }
 
 #chat-title > div #input-search {
