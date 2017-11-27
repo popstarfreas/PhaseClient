@@ -550,8 +550,6 @@ a:focus {
     bottom: 1px;
     background: transparent;
     border: none;
-    border: 1px solid #282b30;
-    background: #36393e;
 }
 
 #chat-title > div #input-search {
@@ -562,7 +560,8 @@ a:focus {
     display: none;
     padding-left: 3px;
     border-radius: 3px;
-    border: 1px solid #999;
+    border: 1px solid #282b30;
+    background: #36393e;
 }
 
 #chat-title > div > #message-search {
