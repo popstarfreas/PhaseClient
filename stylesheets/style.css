@@ -96,6 +96,7 @@ a:focus {
     outline: thin solid;
     outline-offset: 2px;
     -moz-outline-radius: 2px;
+    color: #3698d2;
 }
 
 .navbar-nav a:focus,
