@@ -366,7 +366,8 @@ a:focus {
 }
 
 #phase-content #content-discussions #discussion-title #add-discussion:hover {
-    color: #333;
+    color: #9100c1;
+    cursor: pointer;
 }
 
 #phase-content #content-discussions #discussion-list {
@@ -672,18 +673,29 @@ a:focus {
     cursor: pointer;
 }
 
+#phase-content #content-people #people-list #adduser-discussion-form {
+    display: flex;
+    padding: 10px 5px 0px 10px;
+    height: 36px;
+    white-space: nowrap;
+}
+
 #phase-content #content-people #people-list #adduser-discussion_input,
 #phase-content #content-people #people-list #adduser-call_input {
-    width: 100%;
-    background: #FFF;
+    background: transparent;
     z-index: 2;
     border: none;
+    height: 28px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 130px;
+    font-weight: bold;
+    margin-left: 8px;
 }
 
 #phase-content #content-people #people-list #adduser-discussion,
 #phase-content #content-people #people-list #adduser-call {
     float: right;
-    color: #999;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -693,7 +705,8 @@ a:focus {
 
 #phase-content #content-people #people-list #adduser-discussion:hover,
 #phase-content #content-people #people-list #adduser-call:hover {
-    color: #333;
+    color: #9100c1;
+    cursor: pointer;
 }
 
 #phase-content #content-people #people-list .removeuser-discussion,
@@ -708,7 +721,8 @@ a:focus {
 
 #phase-content #content-people #people-list .removeuser-discussion:hover,
 #phase-content #content-people #people-list .leaveuser-discussion:hover {
-    color: #333;
+    color: #9100c1;
+    cursor: pointer;
 }
 
 #phase-content #content-people #people-list .people-section {
@@ -772,6 +786,7 @@ a:focus {
     padding-top: 2px;
 }
 
+#phase-content #content-people #people-list #adduser-discussion-form .people_user_avatar img,
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_avatar img {
     width: 30px;
     height: 30px;
