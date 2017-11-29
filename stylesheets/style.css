@@ -673,11 +673,38 @@ a:focus {
     cursor: pointer;
 }
 
-#phase-content #content-people #people-list #adduser-discussion-form {
+#phase-content #content-people #people-list #adduser-discussion-form #adduser-discussion-entry {
     display: flex;
-    padding: 10px 5px 0px 10px;
-    height: 36px;
+    padding: 10px 5px 5px 10px;
     white-space: nowrap;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form #adduser-discussion-results {
+    margin-top: 5px;
+    background: #2e3136;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result {
+    display: flex;
+    padding: 5px 0 5px 10px;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result:hover {
+    background: #13151a;
+    cursor: pointer;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result.selected {
+    background: #20242b;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 130px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-top: 5px;
 }
 
 #phase-content #content-people #people-list #adduser-discussion_input,
@@ -723,6 +750,7 @@ a:focus {
     min-height: 41px;
     display: flex;
     flex-direction: column;
+    max-height: 100%;
 }
 
 #phase-content #content-people #people-list .people-section-name {
