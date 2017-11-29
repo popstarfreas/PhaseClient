@@ -958,7 +958,7 @@ a:focus {
 
 #chat-content #chat-list > li .chat-message-right .chat-message-ip {
     margin-left: 5px;
-    color: #CCC;
+    color: #36393e;
 }
 
 #chat-content #chat-list > li:hover .chat-message-right .chat-message-ip {
