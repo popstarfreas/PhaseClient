@@ -1,6 +1,6 @@
 {
   "name": "phaseweb",
-  "version": "0.37.1",
+  "version": "0.37.2",
   "description": "The web edition of the Phase Client",
   "main": "index.js",
   "scripts": {
