@@ -483,7 +483,7 @@ a:focus {
 #phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-right .chat-message-content {
     font-size: 13px;
     overflow: hidden;
-    width: 185px;
+    width: 170px;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
@@ -860,6 +860,10 @@ a:focus {
     display: block;
     padding: 8px 10px 8px 15px;
     clear: both;
+}
+
+#chat-content #chat-list > li.root-message {
+    background: #480f0f;
 }
 
 #chat-content #chat-list > li .chat-message-avatar,
