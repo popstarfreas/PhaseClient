@@ -168,15 +168,15 @@ a:focus {
 }
 
 #phase-avatar-form {
+    color: #aaa;
     z-index: 1001;
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: white;
+    background-color: #36393e;
     width: 400px;
-    height: 124px;
-    border: 1px solid #eee;
-    box-shadow: 0 0 20px #888;
+    border: 1px solid #282b30;
+    box-shadow: 0 0 20px #2b2b2b;
     border-radius: 5px;
     padding: 5px;
     margin-left: -200px;
@@ -185,8 +185,8 @@ a:focus {
 }
 
 #phase-avatar-form #phase-avatar-form-title {
-    background: #f8f8f8;
-    border-bottom: 2px solid #eee;
+    background: #2e3136;
+    border-bottom: 2px solid #282b30;
     font-size: 18px;
     padding: 7px 10px;
     margin: -5px -5px 10px -5px;
@@ -195,10 +195,10 @@ a:focus {
 }
 
 #phase-avatar-form input {
-    border: 1px solid #eee;
-    background: #fbfbfb;
+    border: 1px solid #2e3136;
+    background: #33373d;
     margin-bottom: 5px;
-    color: #555;
+    color: #888;
 }
 
 #phase-avatar-form input#submit {
@@ -208,9 +208,8 @@ a:focus {
 }
 
 #phase-avatar-form input#submit:hover {
-    background: #eee;
+    background: #2e3136;
 }
-
 
 #phase-calljoin-form {
     z-index: 1001;
