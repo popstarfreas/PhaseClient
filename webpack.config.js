@@ -8,9 +8,11 @@ module.exports = {
     path: __dirname + "/dist/web",
     filename: 'bundle.[hash].js'
   },
-  devtool: 'source-map',
+  devtool: 'eval',
   plugins: [
-      new webpack.optimize.UglifyJsPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      sourceMap: false
+      }),
 
     new HtmlWebpackPlugin({
       template: 'app/index.html'
