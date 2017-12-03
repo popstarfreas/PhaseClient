@@ -793,22 +793,48 @@ a:focus {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li {
     padding: 2px 5px 2px 10px;
-    height: 36px;
     white-space: nowrap;
-    clear: both;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li.user-being-removed {
     background: #522222;
 }
 
+#phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_right {
+    height: 36px;
+}
+
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_avatar {
     float: left;
     padding-top: 2px;
+    position: relative;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-status {
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    border: 2px solid #36393e;
+    border-radius: 7px;
+    font-size: 13px;
+    width: 15px;
+    height: 15px;
+}
+
+
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-online {
+    background: #1AC600;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-offline {
+    display: none;
 }
 
 #phase-content #content-people #people-list #adduser-discussion-form .people_user_avatar img,
@@ -822,7 +848,6 @@ a:focus {
     float: left;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 130px;
     font-weight: bold;
     margin-left: 8px;
     margin-top: 5px;
@@ -929,7 +954,7 @@ a:focus {
 
 #chat-content #chat-list > li .chat-message-avatar img,
 #chat-content #chat-list-inprogress li .chat-message-avatar img {
-    width: 35px;
+    width: 36px;
     height: 36px;
     border-radius: 26px;
     margin-right: 7px;
@@ -957,7 +982,7 @@ a:focus {
 
 #chat-content #chat-list > li:hover,
 #chat-content #chat-list-inprogress li:hover {
-    background-color: #282b30;
+    background-color: #313338;
 }
 
 #chat-content #chat-list > li .chat-message-right,
@@ -1403,7 +1428,7 @@ a:focus {
 }
 
 div#chat-input > div#chat-input-avatar > img {
-    width: 35px;
+    width: 36px;
     height: 36px;
     border-radius: 26px;
     margin-right: 12px;

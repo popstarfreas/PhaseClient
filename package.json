@@ -23,7 +23,7 @@
     "langdetect": "^0.2.1",
     "moment": "^2.17.1",
     "simple-peer": "^7.0.0",
-    "socketcluster-client": "^5.1.1",
+    "socketcluster-client": "^9.0.0",
     "ts-loader": "^1.3.3",
     "ts-promise": "^0.3.4",
     "typescript": "^2.3.2",
