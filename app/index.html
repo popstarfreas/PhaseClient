@@ -38,6 +38,49 @@
             </form>
         </div>
     </div>
+    <div id="phase-shortcuts">
+        <div id="phase-shortcuts-title">Shorcuts</div>
+        <div id="phase-shortcuts-body">
+            <h4>Discussion</h4>
+            <table>
+                <tbody><tr>
+                    <th>Action</th>
+                    <th>Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Switch to 1st, 2nd etc discussion in list</td>
+                    <td>s + (1-9)</td>
+                </tr>
+                <tr>
+                    <td>Switch to next discussion in list</td>
+                    <td>s + n</td>
+                </tr>
+                <tr>
+                    <td>Switch to previous discussion in list</td>
+                    <td>s + p</td>
+                </tr>
+                <tr>
+                    <td>Switch to next unread discussion in list</td>
+                    <td>s + u</td>
+                </tr>
+            </tbody></table>
+            <h4>Chat</h4>
+            <table>
+                <tbody><tr>
+                    <th>Action</th>
+                    <th>Shortcut</th>
+                </tr>
+                <tr>
+                    <td>Focus chat input</td>
+                    <td>c</td>
+                </tr>
+                <tr>
+                    <td>Unfocus chat input</td>
+                    <td>ESC</td>
+                </tr>
+                </tbody></table>
+        </div>
+    </div>
     <div id="phase-avatar-form">
 	    <div id="phase-avatar-form-title">Change your avatar</div>
             <form id      =  "uploadForm"
@@ -120,12 +163,12 @@
                             </div>
                             <div id="people-section-phase" class="people-section">
                                 <div class="people-section-name">Users on Phase (<span id="people-section-phase-count">-</span>) <span class="glyphicon glyphicon-chevron-down"></span></div>
-                                <div class="people-section-list">
+                                <div class="people-section-list" style="display: block">
                                     <ul>
                                     </ul>
                                 </div>
                             </div>
-                            <div id="people-section-terraria" class="people-section">
+                            <div id="people-section-terraria" class="people-section" style="display: none">
                                 <div class="people-section-name">Users on Terraria (<span id="people-section-terraria-count">-</span>) <span class="glyphicon glyphicon-chevron-down"></span></div>
                                 <div class="people-section-list">
                                     <ul>
@@ -136,7 +179,7 @@
                                 <div class="people-section-name">Friends (0) <span class="glyphicon glyphicon-chevron-down"></span></div>
                                 <div class="people-section-list"></div>
                             </div>-->
-                            <div id="people-section-call" class="people-section">
+                            <div id="people-section-call" class="people-section" style="display: none">
                                 <div class="people-section-name">Users in Call (<span id="people-section-call-count">0</span>) <span class="glyphicon glyphicon-chevron-down"></span><i id="adduser-call" class="fa fa-plus" data-container="body" data-toggle="tooltip" title="" data-original-title="Add User to Call Group"></i></div>
                                 <div class="people-section-list">
                                     <ul></ul>

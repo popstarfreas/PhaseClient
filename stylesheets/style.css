@@ -167,6 +167,69 @@ a:focus {
     cursor: pointer;
 }
 
+#phase-shortcuts {
+    color: #aaa;
+    z-index: 1001;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #36393e;
+    width: 400px;
+    border: 1px solid #282b30;
+    box-shadow: 0 0 20px #2b2b2b;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: -200px;
+    margin-top: -224px;
+    display: none;
+}
+
+#phase-shortcuts #phase-shortcuts-title {
+    background: #2e3136;
+    border-bottom: 2px solid #282b30;
+    font-size: 18px;
+    padding: 7px 10px;
+    margin: -5px -5px 10px -5px;
+    border-radius: 5px 5px 0 0;
+    font-weight: 1000;
+}
+
+#phase-shortcuts #phase-shortcuts-body {
+    padding: 0 11px 20px 11px;
+}
+
+#phase-shortcuts #phase-shortcuts-body table {
+    color: #aaa;
+    margin: auto;
+    width: 340px;
+}
+
+#phase-shortcuts #phase-shortcuts-body table tr {
+    background: #32353a;
+}
+
+#phase-shortcuts #phase-shortcuts-body table tr:nth-child(even) {
+    background: #3f4246;
+}
+
+#phase-shortcuts #phase-shortcuts-body table th {
+    text-align: left;
+    background: #2d3033;
+}
+
+#phase-shortcuts #phase-shortcuts-body table td {
+    font-size: 14px;
+}
+
+#phase-shortcuts #phase-shortcuts-body table td,
+#phase-shortcuts #phase-shortcuts-body table th {
+    padding: 5px;
+}
+
+#phase-shortcuts #phase-shortcuts-body table td:nth-child(even) {
+    font-weight: bold;
+}
+
 #phase-avatar-form {
     color: #aaa;
     z-index: 1001;
