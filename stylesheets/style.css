@@ -16,15 +16,23 @@ audio::-webkit-media-controls-panel {
 }
 
 ::-webkit-scrollbar {
-  background: transparent;
-  width: 10px;
+    background: #2d3035;
+    width: 12px;
+    border-radius: 10px;
 }
 
 
 ::-webkit-scrollbar-thumb {
-    background: #282B2E;
+    background: #212427;
     border-radius: 10px;
-    width: 10px;
+}
+
+#content-chat ::-webkit-scrollbar-thumb {
+    border: 1px solid #36393e;
+}
+
+#content-discussions ::-webkit-scrollbar-thumb {
+    border: 1px solid #2e3136;
 }
 
 /* Loading */
@@ -683,6 +691,7 @@ a:focus {
     margin-top: 40px;
     overflow: auto;
     position: relative;
+    margin-right: -13px;
 }
 
 @-moz-document url-prefix() {
