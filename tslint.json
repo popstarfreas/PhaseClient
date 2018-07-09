@@ -28,6 +28,7 @@
             true,
             25
         ],
+        "array-type": false,
         "eofline": true,
         "no-eval": false,
         "one-variable-per-declaration": [true],
