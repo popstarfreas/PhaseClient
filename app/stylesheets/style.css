@@ -1056,6 +1056,21 @@ a:focus {
     color: #555;
 }
 
+#phase-content #content-people #people-list .people-section .people-section-list .people-section-ingame-sub .people-section-ingame-sub-head {
+    display: flex;
+    font-weight: bold;
+    background: #2e3136;
+    padding: 10px;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list .people-section-ingame-sub .people-section-ingame-sub-head .people-section-ingame-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-right: 7px;
+}
+
 
 /* CHAT STYLE */
 
