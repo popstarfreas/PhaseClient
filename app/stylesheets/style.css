@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Andy Bold';
+    src: url('/fonts/andybold.ttf');
+}
+
 body {
     font-family: 'Lato', sans-serif;
     background-color: #2e3136;
@@ -1117,14 +1122,59 @@ a:focus {
     clear: right;
 }
 
-#content-chat #chat-list li .terrariaItem {
+#content-chat #chat-list li .terraria-item {
+    display: inline-block;
+    position: relative;
+}
+
+#content-chat #chat-list li .terraria-item .terraria-item-img {
     display: inline;
     clear: none;
 }
 
-#content-chat #chat-list .terrariaItem {
+#content-chat #chat-list .terraria-item .terraria-item-img {
     max-height: 20px;
     padding: 0 2px 0 2px;
+}
+
+#content-chat #chat-list .terraria-item .terraria-item-stack {
+    font-family: 'Andy Bold', sans-serif;
+    position: absolute;
+    left: 2px;
+    bottom: -2px;
+    font-size: 12px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#content-chat #chat-list .terraria-item .terraria-item-name {
+    font-family: 'Andy Bold', sans-serif;
+    position: absolute;
+    right: -200px;
+    height: 20px;
+    width: 200px;
+    bottom: -2px;
+    font-size: 18px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    display: none;
+    z-index: 99;
+}
+
+#content-chat #chat-list .terraria-item:hover .terraria-item-name {
+    display: block;
+}
+
+#content-chat #chat-list .terraria-item:hover .terraria-item-name:hover {
+    display: none;
 }
 
 #chat-content #chat-list > li:hover,
