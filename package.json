@@ -19,6 +19,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/diff": "0.0.31",
+    "asdfjkl": "0.0.2",
     "bootstrap": "^3.3.7",
     "combokeys": "^2.4.6",
     "diff": "^3.2.0",
