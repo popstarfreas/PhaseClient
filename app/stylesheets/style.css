@@ -1242,6 +1242,15 @@ a:focus {
     font-size: 14px;
 }
 
+#chat-content #chat-list li .chat-message-info .chat-spam-alert {
+    margin: 0px 5px;
+    background: #f30000;
+    border-radius: 5px;
+    padding: 2px;
+    font-size: 12px;
+    color: #ffebeb;
+}
+
 #chat-content #chat-list > li .chat-name,
 #chat-content #chat-list-inprogress li .chat-name {
     font-size: 15px;
