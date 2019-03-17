@@ -4,7 +4,7 @@
   "description": "The web edition of the Phase Client",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0",
+    "start": "parcel app/index.html",
     "startmini": "webpack-dev-server --config webpack.mini.config.js --inline --progress --port 8080 --host 0.0.0.0",
     "startm": "webpack-dev-server --config webpack.mobile.config.js -inline --progress --port 8081 --host 0.0.0.0",
     "build": "webpack --config webpack.config.js --progress --profile --bail && webpack --config webpack.mobile.config.js --progress --profile --bail",
@@ -12,6 +12,7 @@
   },
   "alias": {
     "phaseclient": "./app/node_modules/phaseclient",
+    "phasemobile": "./app/node_modules/phasemobile",
     "phaseweb": "./app/node_modules/phaseweb",
     "phasecore": "./node_modules/phasecore"
   },
