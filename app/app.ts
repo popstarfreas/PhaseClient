@@ -8,7 +8,7 @@ $(() => {
         combineMessages: true,
         shrinkJoinLeaveMessages: true,
         useAndDisplayJoinLeaveMessages: false,
-        displayOtherSystemsNames: true,
+        displayOtherSystemsNames: false,
         mergeLiveTypingWithCompleteChatArea: false
     });
 
