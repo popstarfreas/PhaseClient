@@ -1,4 +1,4 @@
-import * as $ from "jquery";
+import $ from "jquery";
 import Network from "phaseclient/network";
 import Client from "phasemobile/client";
 import PageModel from "phasemobile/pagemodel";

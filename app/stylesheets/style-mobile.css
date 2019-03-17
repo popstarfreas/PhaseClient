@@ -124,6 +124,23 @@ a:focus {
 }
 
 /* TOP BAR  */
+@media only screen and (max-height: 250px) {
+    #phase-navigation {
+        display: none;
+    }
+
+    #phase #phase-content {
+        top: 0px;
+    }
+
+    #phase #phase-content #content-chat #chat-title {
+        display: none;
+    }
+
+    #phase #phase-content #content-chat #chat-content {
+        margin-top: 0;
+    }
+}
 
 #phase-navigation > nav {
     z-index: 998;
@@ -355,6 +372,7 @@ a:focus {
 
 #phase-content #content-discussions #discussion-list {
     height: 100%;
+    width: 250px;
     overflow: auto;
     margin-right: -20px;
 }
@@ -462,6 +480,33 @@ a:focus {
     font-size: 13px;
     font-weight: bold;
     color: #639EB8;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .chat-message-content img {
+    display: none;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .terraria-item img {
+    width: 20px;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .terraria-item > span {
+    display: none;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .terraria-item {
+    display: inline-block;
+    position: relative;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .terraria-item .terraria-item-img {
+    display: inline;
+    clear: none;
+}
+
+#phase-content #content-discussions #discussion-list .discussion .discussion-preview .terraria-item .terraria-item-img {
+    max-height: 20px;
+    padding: 0 2px 0 2px;
 }
 
 #phase-content #content-discussions #discussion-list > .selected {
@@ -591,7 +636,8 @@ a:focus {
 #chat-content {
     z-index: 0;
     margin-top: 40px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 @-moz-document url-prefix() {
@@ -619,7 +665,6 @@ a:focus {
 }
 
 /* CONTENT PEOPLE */
-
 #phase-content #content-people #people-list {
     height: 100%;
     width: 100%;
@@ -644,18 +689,56 @@ a:focus {
     cursor: pointer;
 }
 
+#phase-content #content-people #people-list #adduser-discussion-form #adduser-discussion-entry {
+    display: flex;
+    padding: 10px 5px 5px 10px;
+    white-space: nowrap;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form #adduser-discussion-results {
+    margin-top: 5px;
+    background: #2e3136;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result {
+    display: flex;
+    padding: 5px 0 5px 10px;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result:hover {
+    background: #13151a;
+    cursor: pointer;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result.selected {
+    background: #20242b;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .adduser-search-result-name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 130px;
+    font-weight: bold;
+    margin-left: 8px;
+    margin-top: 5px;
+}
+
 #phase-content #content-people #people-list #adduser-discussion_input,
 #phase-content #content-people #people-list #adduser-call_input {
-    width: 100%;
-    background: #FFF;
+    background: transparent;
     z-index: 2;
     border: none;
+    height: 28px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 130px;
+    font-weight: bold;
+    margin-left: 8px;
 }
 
 #phase-content #content-people #people-list #adduser-discussion,
 #phase-content #content-people #people-list #adduser-call {
     float: right;
-    color: #999;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -665,28 +748,25 @@ a:focus {
 
 #phase-content #content-people #people-list #adduser-discussion:hover,
 #phase-content #content-people #people-list #adduser-call:hover {
-    color: #333;
+    color: #9100c1;
+    cursor: pointer;
 }
 
 #phase-content #content-people #people-list .removeuser-discussion,
 #phase-content #content-people #people-list .leaveuser-discussion {
     float: right;
     margin-right: 10px;
-    color: #999;
+    color: #3f4248;
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-}
-
-#phase-content #content-people #people-list .removeuser-discussion:hover,
-#phase-content #content-people #people-list .leaveuser-discussion:hover {
-    color: #333;
 }
 
 #phase-content #content-people #people-list .people-section {
     min-height: 41px;
     display: flex;
     flex-direction: column;
+    max-height: 100%;
 }
 
 #phase-content #content-people #people-list .people-section-name {
@@ -730,20 +810,53 @@ a:focus {
     margin-top: 10px;
     margin-bottom: 10px;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li {
-    padding: 4px 5px 0px 10px;
-    height: 36px;
+    padding: 2px 5px 2px 10px;
     white-space: nowrap;
-    clear: both;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li.user-being-removed {
+    background: #522222;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_right {
+    height: 36px;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .systemSuffix {
+    color: #6381B8;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_avatar {
     float: left;
     padding-top: 2px;
+    position: relative;
 }
 
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-status {
+    position: absolute;
+    right: -4px;
+    bottom: -2px;
+    border: 2px solid #36393e;
+    border-radius: 7px;
+    font-size: 13px;
+    width: 15px;
+    height: 15px;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-online {
+    background: #1AC600;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li .chat-terraria-offline {
+    display: none;
+}
+
+#phase-content #content-people #people-list #adduser-discussion-form .people_user_avatar img,
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people_user_avatar img {
     width: 30px;
     height: 30px;
@@ -754,10 +867,10 @@ a:focus {
     float: left;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 130px;
     font-weight: bold;
     margin-left: 8px;
     margin-top: 5px;
+    max-width: 135px;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people-username-creator {
@@ -766,6 +879,26 @@ a:focus {
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .people-username-moderator {
     color: #DE7C4B;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .leaveuser-discussion,
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .removeuser-discussion {
+    color: #555;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .add-mod {
+    color: #6f623b;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .add-mod:hover {
+    color: #a2873b;
+    cursor: pointer;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .leaveuser-discussion:hover,
+#phase-content #content-people #people-list .people-section .people-section-list ul li:hover .removeuser-discussion:hover {
+    color: #bf00ff;
+    cursor: pointer;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .mod {
@@ -784,7 +917,6 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .add-mod {
-    color: #FFBB00;
     width: 14px;
     font-size: 14px;
     float: right;
@@ -792,12 +924,7 @@ a:focus {
     top: 50%;
     transform: translateY(-50%);
     margin-right: 10px;
-    color: #fff;
-}
-
-#phase-content #content-people #people-list .people-section .people-section-list ul li .add-mod:hover {
-    color: #FFD663;
-    cursor: pointer;
+    color: #3f4248;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .fa-circle {
@@ -815,6 +942,21 @@ a:focus {
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li .user-status-offline {
     color: #555;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list .people-section-ingame-sub .people-section-ingame-sub-head {
+    display: flex;
+    font-weight: bold;
+    background: #2e3136;
+    padding: 10px;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list .people-section-ingame-sub .people-section-ingame-sub-head .people-section-ingame-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    margin-right: 7px;
 }
 
 
@@ -858,14 +1000,59 @@ a:focus {
     clear: right;
 }
 
-#content-chat #chat-list li .terrariaItem {
+#content-chat #chat-list li .terraria-item {
+    display: inline-block;
+    position: relative;
+}
+
+#content-chat #chat-list li .terraria-item .terraria-item-img {
     display: inline;
     clear: none;
 }
 
-#content-chat #chat-list .terrariaItem {
+#content-chat #chat-list .terraria-item .terraria-item-img {
     max-height: 20px;
     padding: 0 2px 0 2px;
+}
+
+#content-chat #chat-list .terraria-item .terraria-item-stack {
+    font-family: 'Andy Bold', sans-serif;
+    position: absolute;
+    left: 2px;
+    bottom: -2px;
+    font-size: 12px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#content-chat #chat-list .terraria-item .terraria-item-name {
+    font-family: 'Andy Bold', sans-serif;
+    position: absolute;
+    right: -200px;
+    height: 20px;
+    width: 200px;
+    bottom: -2px;
+    font-size: 18px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    display: none;
+    z-index: 99;
+}
+
+#content-chat #chat-list .terraria-item:hover .terraria-item-name {
+    display: block;
+}
+
+#content-chat #chat-list .terraria-item:hover .terraria-item-name:hover {
+    display: none;
 }
 
 #chat-content #chat-list > li .chat-message-right,
@@ -881,6 +1068,19 @@ a:focus {
     line-height: normal;
 }
 
+#chat-content #chat-list > li .chat-message-right > .chat-message-content .alert-name {
+    color: #e77aec;
+    font-weight: bold;
+}
+
+#discussion-list .discussion-preview .chat-message-right > .chat-message-content .user-mention,
+#chat-content #chat-list > li .chat-message-right > .chat-message-content .user-mention {
+    color: #ad36ff;
+    background: #47384f;
+    border-radius: 5px;
+    padding: 1px 2px;
+}
+
 #chat-content #chat-list > li .chat-message-right > .chat-message-content > .chat-line {
     margin-top: 2px;
     margin-bottom: 2px;
@@ -888,16 +1088,18 @@ a:focus {
 
 #chat-content #chat-list > li .chat-message-right .chat-message-ip {
     margin-left: 5px;
-    color: #CCC;
+    display: none;
 }
 
 #chat-content #chat-list > li:hover .chat-message-right .chat-message-ip {
     color: #777;
+    display: inline;
 }
 
 #chat-content #chat-list > li .chat-message-info,
 #chat-content #chat-list-inprogress li .chat-message-info {
-    display: block;
+    display: inline-flex;
+    flex-wrap: wrap;
 }
 
 #chat-content #chat-list li .chat-message-info .systemSuffix,
@@ -1352,7 +1554,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
 /* LOGIN SECTION */
 
 #login_main {
-    width: 500px;
+    width: 100%;
     padding: 5px;
     position: absolute;
     left: 0;
@@ -1371,15 +1573,7 @@ div.play-button { height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -
 
 #login_main #login_container {
     font-size: 18px;
-}
-
-#login_main #login_information {
-    padding-left: 20px;
-}
-
-#login_main #login_form {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 30px 0 20px;
 }
 
 #login_main #login_form>div {
