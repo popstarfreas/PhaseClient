@@ -1150,6 +1150,11 @@ a:focus {
     display: block;
 }
 
+#content-chat #chat-list > li img.emoji {
+    display: inline;
+    clear: none;
+}
+
 #content-chat #chat-list li .autoLinkedImage {
     display: block;
     clear: right;
