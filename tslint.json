@@ -70,7 +70,8 @@
         "member-ordering": [
             false
         ],
-        "adjacent-overload-signatures": false
+        "adjacent-overload-signatures": false,
+        "arrow-parens": false
     },
     "rulesDirectory": []
 }
