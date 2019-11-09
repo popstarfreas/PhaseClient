@@ -1,11 +1,11 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add cssnano/package.json -D
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js upgrade caniuse-lite browserslist
 
 PATH: 
-  C:\Users\aaren\AppData\Local\Programs\Git\mingw64\bin;C:\Users\aaren\AppData\Local\Programs\Git\usr\bin;C:\Users\aaren\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\MATLAB\R2017a\runtime\win64;C:\Program Files\MATLAB\R2017a\bin;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.144-1\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\Users\root\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Users\aaren\Documents\ffmpeg-20180220-a877d22-win32-static\bin;C:\Program Files (x86)\Yarn\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet;C:\Python27;C:\Python27\Scripts;C:\Users\aaren\AppData\Roaming\local\bin;C:\Users\aaren\AppData\Local\Microsoft\WindowsApps;C:\Users\aaren\AppData\Roaming\npm;C:\Users\aaren\AppData\Local\Yarn\bin;C:\Users\aaren\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64;C:\Users\aaren\AppData\Local\nvs;C:\Users\aaren\AppData\Local\Programs\Git\cmd
+  C:\Users\aaren\AppData\Local\Programs\Git\mingw64\bin;C:\Users\aaren\AppData\Local\Programs\Git\usr\bin;C:\Users\aaren\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl;C:\Program Files (x86)\Embarcadero\Studio\19.0\bin64;C:\Users\Public\Documents\Embarcadero\Studio\19.0\Bpl\Win64;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.1\libnvvp;C:\Program Files\Haskell\bin;C:\Program Files\Haskell Platform\8.2.2\lib\extralibs\bin;C:\Program Files\Haskell Platform\8.2.2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\RedHat\java-1.8.0-openjdk-1.8.0.144-1\bin;C:\Program Files\Haskell Platform\8.2.2\mingw\bin;C:\Users\root\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\nodejs;C:\Users\aaren\Documents\ffmpeg-20180220-a877d22-win32-static\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet;C:\Python27;C:\Python27\Scripts;C:\Program Files (x86)\Yarn\bin;C:\Program Files\Microsoft VS Code\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Microsoft Network Monitor 3;C:\Program Files\leJOS EV3\bin;G:\browser.downloads\apache-maven-3.6.0\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\aaren\.cargo\bin;C:\Users\aaren\AppData\Roaming\local\bin;C:\Users\aaren\AppData\Local\Microsoft\WindowsApps;C:\Users\aaren\AppData\Roaming\npm;C:\Users\aaren\AppData\Local\Programs\MiKTeX 2.9\miktex\bin\x64;C:\Users\aaren\AppData\Local\nvs;C:\Users\aaren\AppData\Local\Programs\Git\cmd;C:\Users\aaren\AppData\Local\Yarn\bin;C:\Users\aaren\AppData\Local\atom\bin;C:\Users\aaren\AppData\Local\Programs\Git\usr\bin;C:\Users\aaren\.dotnet\tools
 
 Yarn version: 
-  1.5.1
+  1.7.0
 
 Node version: 
   9.5.0
@@ -13,28 +13,38 @@ Node version:
 Platform: 
   win32 x64
 
+Trace: 
+  Error: EPERM: operation not permitted, lstat 'G:\Dev\Projects\PhaseClient\node_modules\phasecore'
+
 npm manifest: 
   {
     "name": "phaseweb",
-    "version": "1.5.0",
+    "version": "1.11.0",
     "description": "The web edition of the Phase Client",
     "main": "index.js",
     "scripts": {
-      "start": "webpack-dev-server --inline --progress --port 8080 --host 0.0.0.0",
+      "start": "parcel app/index.html",
       "startmini": "webpack-dev-server --config webpack.mini.config.js --inline --progress --port 8080 --host 0.0.0.0",
       "startm": "webpack-dev-server --config webpack.mobile.config.js -inline --progress --port 8081 --host 0.0.0.0",
       "build": "webpack --config webpack.config.js --progress --profile --bail && webpack --config webpack.mobile.config.js --progress --profile --bail",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "alias": {
+      "phaseclient": "./app/node_modules/phaseclient",
+      "phasemobile": "./app/node_modules/phasemobile",
+      "phaseweb": "./app/node_modules/phaseweb",
+      "phasecore": "./node_modules/phasecore"
+    },
     "author": "",
     "license": "ISC",
     "dependencies": {
       "@types/diff": "0.0.31",
+      "asdfjkl": "0.0.2",
       "bootstrap": "^3.3.7",
       "combokeys": "^2.4.6",
       "diff": "^3.2.0",
       "html-webpack-plugin": "^2.24.1",
-      "jquery": "^3.1.1",
+      "jquery": "^3.3.1",
       "jquery.hotkeys": "^0.1.0",
       "langdetect": "^0.2.1",
       "moment": "^2.17.1",
@@ -184,6 +194,13 @@ Lockfile:
   array-unique@^0.3.2:
     version "0.3.2"
     resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
+  
+  asdfjkl@0.0.2:
+    version "0.0.2"
+    resolved "https://registry.yarnpkg.com/asdfjkl/-/asdfjkl-0.0.2.tgz#bc2344f2eb7fa78fd192e27cbbe1989eaa00de93"
+    dependencies:
+      commander "^2.11.0"
+      lodash "^4.17.4"
   
   asn1.js@^4.0.0:
     version "4.10.1"
@@ -591,6 +608,10 @@ Lockfile:
   commander@2.15.x, commander@~2.15.0:
     version "2.15.1"
     resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
+  
+  commander@^2.11.0:
+    version "2.20.0"
+    resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.0.tgz#d58bb2b5c1ee8f87b0d340027e9e94e222c5a422"
   
   component-emitter@1.2.1, component-emitter@^1.2.1:
     version "1.2.1"
@@ -1818,9 +1839,9 @@ Lockfile:
     version "0.1.0"
     resolved "https://registry.yarnpkg.com/jquery.hotkeys/-/jquery.hotkeys-0.1.0.tgz#a88f636494fe75de41e4b753a059e5a523b83273"
   
-  jquery@^3.1.1:
-    version "3.3.1"
-    resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+  jquery@^3.3.1:
+    version "3.4.1"
+    resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.4.1.tgz#714f1f8d9dde4bdfa55764ba37ef214630d80ef2"
   
   js-yaml@^3.9.0:
     version "3.12.0"
@@ -1936,6 +1957,10 @@ Lockfile:
   lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.3:
     version "4.17.10"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+  
+  lodash@^4.17.4:
+    version "4.17.11"
+    resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   
   longest@^1.0.1:
     version "1.0.1"
@@ -3755,22 +3780,3 @@ Lockfile:
       cliui "^2.1.0"
       decamelize "^1.0.0"
       window-size "0.1.0"
-
-Trace: 
-  Error: Command failed.
-  Exit code: 128
-  Command: git
-  Arguments: ls-remote --tags --heads ssh://git@github.com/cssnano/package.json.git
-  Directory: E:\Users\aaren\Documents\PhaseClient
-  Output:
-  Host key verification failed.
-  fatal: Could not read from remote repository.
-  
-  Please make sure you have the correct access rights
-  and the repository exists.
-      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
-      at ChildProcess.emit (events.js:160:13)
-      at maybeClose (internal/child_process.js:943:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:220:5)

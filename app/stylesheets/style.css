@@ -1154,6 +1154,11 @@ a:focus {
     clear: both;
 }
 
+#chat-content #chat-list .shrinkmessage
+{
+    padding: 0 10px 0 15px;
+}
+
 #chat-content #chat-list > li.root-message {
     background: #480f0f;
 }
