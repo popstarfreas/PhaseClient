@@ -823,6 +823,7 @@ a:focus {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: #32363c;
 }
 
 #phase-content #content-people #people-list #autocomplete ul {
