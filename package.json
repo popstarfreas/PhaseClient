@@ -19,28 +19,29 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/diff": "0.0.31",
     "asdfjkl": "0.0.2",
     "bootstrap": "^3.4.1",
     "combokeys": "^2.4.6",
     "diff": "^3.2.0",
-    "html-webpack-plugin": "^2.24.1",
     "jquery": "^3.4.1",
     "jquery.hotkeys": "^0.1.0",
     "langdetect": "^0.2.1",
     "moment": "^2.17.1",
     "phasecore": "file:../PhaseCore/module",
     "simple-peer": "^7.0.0",
-    "socketcluster-client": "^9.0.0",
-    "ts-loader": "^1.3.3",
-    "ts-promise": "^0.3.4",
-    "typescript": "^2.3.2",
-    "webpack": "^2.5.1"
+    "socketcluster-client": "^9.0.0"
   },
   "devDependencies": {
     "@types/combokeys": "^2.4.5",
+    "@types/diff": "0.0.31",
     "@types/jquery": "^2.0.45",
     "cssnano": "^4.0.2",
-    "webpack-dev-server": "^1.16.2"
+    "html-webpack-plugin": "^2.24.1",
+    "parcel": "^1.12.4",
+    "ts-loader": "^1.3.3",
+    "ts-promise": "^0.3.4",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^3.10.3"
   }
 }
