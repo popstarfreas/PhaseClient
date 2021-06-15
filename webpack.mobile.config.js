@@ -1,5 +1,5 @@
-var webpack = require('webpack');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {  
   entry: './app/mobileapp.ts',
   output: {
@@ -12,8 +12,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: 'app/index.html'
-    })
+      template: 'app/mobile.html'
+    }),
+    new CopyPlugin({
+        patterns: [
+            { from: "app/stylesheets", to: "stylesheets" },
+            { from: "app/fonts", to: "fonts" },
+        ],
+    }),
   ],
   module: {
     rules: [

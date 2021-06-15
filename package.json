@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.config.js --inline --progress --port 8080 --host 127.0.0.1",
     "startmini": "webpack serve --config webpack.mini.config.js --inline --progress --port 8080 --host 127.0.0.1",
-    "startm": "webpack serve --config webpack.mobile.config.js -inline --progress --port 8081 --host 127.0.0.1",
+    "startm": "webpack serve --config webpack.mobile.config.js --inline --progress --port 8081 --host 127.0.0.1",
     "build": "webpack --config webpack.config.js --progress --profile --bail && webpack --config webpack.mobile.config.js --progress --profile --bail",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

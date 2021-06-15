@@ -288,6 +288,8 @@ a:focus {
 }
 
 #phase-content #content-people #people-title {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     margin-top: -1px;
     padding-top: 1px;
@@ -355,6 +357,38 @@ a:focus {
 #phase-content #content-discussions #discussion-title h4 {
     float: left;
 }
+
+#phase-content #content-discussions #discussion-title #filter-discussion {
+    float: right;
+    padding-right: 10px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #BF00FF;
+    z-index: 10;
+    font-size: 12px;
+}
+
+#phase-content #content-discussions #discussion-title #filter-discussion:hover {
+    color: #9100c1;
+    cursor: pointer;
+}
+
+#phase-content #content-discussions #discussion-title #filter-discussion-input {
+    width: 100px;
+    display: none;
+    clear: both;
+    position: relative;
+    left: 126px;
+    z-index: 2;
+    border-bottom-left-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #282b30;
+    border-left: 2px solid #282b30;
+    background: #3d4045;
+    padding: 2px 5px;
+}
+
 
 #phase-content #content-discussions #discussion-title #add-discussion {
     float: right;
@@ -670,6 +704,7 @@ a:focus {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: #32363c;
 }
 
 #phase-content #content-people #people-list #autocomplete ul {
@@ -736,7 +771,12 @@ a:focus {
     margin-left: 8px;
 }
 
-#phase-content #content-people #people-list #adduser-discussion,
+#phase-content #content-people #adduser-discussion {
+    color: #bf00ff;
+    padding-top: 13px;
+    padding-right: 17px;
+}
+
 #phase-content #content-people #people-list #adduser-call {
     float: right;
     position: relative;
@@ -800,7 +840,6 @@ a:focus {
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list {
-    display: none;
     overflow-x: auto;
 }
 
@@ -817,6 +856,24 @@ a:focus {
 #phase-content #content-people #people-list .people-section .people-section-list ul li {
     padding: 2px 5px 2px 10px;
     white-space: nowrap;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li.people-header {
+    font-size: 16px;
+    padding: 10px 0 5px 13px;
+    height: 40px;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li.people-header-staff {
+    color: #de4b5f;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li.people-header-online {
+    color: #00ae53;
+}
+
+#phase-content #content-people #people-list .people-section .people-section-list ul li.people-entry {
+    padding: 2px 5px 2px 20px;
 }
 
 #phase-content #content-people #people-list .people-section .people-section-list ul li.user-being-removed {
