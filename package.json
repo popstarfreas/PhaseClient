@@ -14,7 +14,7 @@
     "phaseclient": "./app/node_modules/phaseclient",
     "phasemobile": "./app/node_modules/phasemobile",
     "phaseweb": "./app/node_modules/phaseweb",
-    "phasecore": "./node_modules/phasecore"
+    "phasecore": "./app/node_modules/phasecore"
   },
   "author": "",
   "license": "ISC",
