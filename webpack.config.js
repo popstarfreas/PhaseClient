@@ -1,27 +1,35 @@
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require('path');
+const CopyPlugin = require('copy-webpack-plugin');
 
-module.exports = {  
+module.exports = {
   entry: './app/app.ts',
   output: {
     path: __dirname + "/dist/web",
     filename: 'bundle.[hash].js'
   },
   devtool: 'eval',
+  optimization: {
+      minimize: true,
+  },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      sourceMap: false
-      }),
-
     new HtmlWebpackPlugin({
       template: 'app/index.html'
-    })
+    }),
+    new CopyPlugin({
+        patterns: [
+            { from: "app/stylesheets", to: "stylesheets" },
+            { from: "app/fonts", to: "fonts" },
+        ],
+    }),
   ],
   module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' }
-    ]
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {allowTsInNodeModules: true}
+      },
+    ],
   },
   resolve: {
     modules: [

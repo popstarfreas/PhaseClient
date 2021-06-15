@@ -7,17 +7,22 @@ module.exports = {
     filename: 'bundle.[hash].js'
   },
   devtool: 'source-map',
+  optimization: {
+      minimize: true,
+  },
   plugins: [
-      new webpack.optimize.UglifyJsPlugin(),
-
     new HtmlWebpackPlugin({
       template: 'app/index.html'
     })
   ],
   module: {
-    loaders: [
-      { test: /\.ts$/, loader: 'ts-loader' }
-    ]
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'ts-loader',
+        options: {allowTsInNodeModules: true}
+      },
+    ],
   },
   resolve: {
     modules: [
