@@ -26,7 +26,7 @@
     "jquery": "^3.6.0",
     "jquery.hotkeys": "^0.1.0",
     "langdetect": "^0.2.1",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "simple-peer": "^9.11.0",
     "socketcluster-client": "^9.0.0",
     "webpack": "^5.39.0"
